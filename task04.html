@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anwesha Nath • Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="task04.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Portfolio<span>.</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="home section" id="home">
+      <div class="container home-grid">
+        <div class="home-text">
+          <p class="eyebrow">Hello, It's Me</p>
+          <h1 class="title">Anwesha Nath</h1>
+          <h2 class="subtitle"><span class="highlight">And I'm a Web Developer</span></h2>
+          <p class="muted">
+            I craft responsive, accessible websites with a focus on clean UI, performance,
+            and delightful UX.
+          </p>
+
+          <div class="socials">
+            <a aria-label="Open email" href="mailto:anweshanath008@gmail.com" class="social"><i class="fa-solid fa-envelope"></i></a>
+            <a aria-label="GitHub" href="https://github.com/Anwesha84" class="social" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/anwesha-nath-940244345" class="social" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn" href="resume.pdf" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="home-art">
+          <!-- Replace src with your photo (1:1 square works best) -->
+          <div class="hex-wrap">
+            <img src="anwesha image.jpg" alt="Anwesha Nath" class="hex-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <div class="container two-col">
+        <div class="about-copy">
+          <h2 class="section-title">About <span>Me</span></h2>
+          <p>
+            I'm <strong>Anwesha Nath</strong>, a passionate developer and lifelong learner.
+            I’m currently a <strong>4th year B.Tech student in Electronics and Communication Engineering (ECE)</strong>
+            at Future Institute of Engineering and Management (MAKAUT).
+          </p>
+          <p>
+            I love building modern web apps and solving real-world problems using neat, scalable code.
+            When I’m not coding, I enjoy collaborating with teams, refining UI details, and exploring new tech.
+          </p>
+
+          <ul class="about-list">
+            <li><i class="fa-regular fa-circle-check"></i> Strong problem solving & clean code practices</li>
+            <li><i class="fa-regular fa-circle-check"></i> Collaboration, communication & leadership</li>
+            <li><i class="fa-regular fa-circle-check"></i> Open to internships & freelance work</li>
+          </ul>
+
+          <div class="about-actions">
+            <!-- Email icon: direct mail -->
+            <a class="icon-button" title="Email me" href="mailto:anweshanath008@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <!-- Gmail compose (optional extra) -->
+            <a class="icon-button" title="Compose in Gmail"
+               href="https://mail.google.com/mail/?view=cm&fs=1&to=anweshanath008@gmail.com"
+               target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-google"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="info-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>What I Do</h3>
+            <p>Frontend development, rapid prototyping, and UI polish with performance in mind.</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p>Final year B.Tech (ECE) • MAKAUT</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Interests</h3>
+            <p>Django apps, IoT interfaces, and ML-flavored UI features.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skill-groups">
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+            <div class="badges">
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">JavaScript (ES6+)</span>
+              <span class="badge">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-server"></i> Frameworks & Backend</h3>
+            <div class="badges">
+              <span class="badge">Django</span>
+              <span class="badge">Python</span>
+              <span class="badge">SQLite / PostgreSQL</span>
+            
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+            <div class="badges">
+              <span class="badge">Teamwork</span>
+              <span class="badge">Communication</span>
+              <span class="badge">Problem Solving</span>
+              <span class="badge">Time Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Recent <span>Projects</span></h2>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="iot_pic.png" alt="Project 1 preview">
+            </div>
+            <div class="project-body">
+              <h3>Women Safety IoT App</h3>
+              <p>
+                A mobile-first dashboard integrated with an IoT panic device.
+                Real-time location, SMS alerts, and emergency contact routing with a
+                secure backend.
+              </p>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="door_pic.png" alt="Project 2 preview">
+            </div>
+            <div class="project-body">
+              <h3>Biometric Door System (Django)</h3>
+              <p>
+                Web interface for attendance & access logs. Role-based authentication,
+                analytics, and Excel export with a simple REST API.
+              </p>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+                <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+
+        <form id="contact-form" class="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Say hello..."></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+          <p class="form-note">This opens your email app with a pre-filled message to me.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#home">Portfolio<span>.</span></a>
+        <p class="muted small">Designed & built with ❤️ and a lot of coffee.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a aria-label="Email" href="mailto:anweshanath008@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a aria-label="GitHub" href="#" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a aria-label="LinkedIn" href="#" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <button id="to-top" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <p class="copyright">© <span id="year"></span> Anwesha Nath. All rights reserved.</p>
+  </footer>
+
+  <script src="task04.js"></script>
+</body>
+</html>
